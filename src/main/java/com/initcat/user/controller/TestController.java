@@ -14,6 +14,7 @@ import javax.validation.Valid;
  * @date 2018/11/27
  */
 @RestController
+@RequestMapping("/helloTest")
 public class TestController {
 
     @RequestMapping("/hello")
