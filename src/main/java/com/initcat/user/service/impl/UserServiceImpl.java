@@ -16,9 +16,9 @@ public class UserServiceImpl implements UserService {
     CommUserRepository commUserRepository;
 
     @Override
-    @Cached(name = USER_INFO, key = "#userNumber", expire = 200)
-    public CommUser login(String userNumber, String passWard, Integer userType) {
-        return commUserRepository.findByNumber(userNumber);
+    @Cached(name = USER_INFO, key = "#userPhone", expire = 200)
+    public CommUser login(String userPhone, String passWard) {
+        return commUserRepository.findByPhone(userPhone);
     }
 
 }

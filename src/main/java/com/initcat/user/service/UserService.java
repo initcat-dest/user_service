@@ -14,11 +14,10 @@ public interface UserService {
 
     /**
      * 登录
-     * @param userNumber 用户编号
+     * @param userPhone 用户手机号
      * @param passWard 密码
-     * @param userType 用户类型
      * @return 用户信息
      */
-    CommUser login(String userNumber, String passWard, Integer userType);
+    CommUser login(String userPhone, String passWard);
 
 }

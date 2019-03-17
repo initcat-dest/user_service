@@ -13,6 +13,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface CommUserRepository extends JpaRepository<CommUser, Long> {
 
-    CommUser findByNumber(String number);
+    CommUser findByPhone(String userPhone);
 
 }

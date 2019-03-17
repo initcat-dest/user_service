@@ -1,5 +1,6 @@
 package com.initcat.user.controller;
 
+import com.initcat.user.model.db.CommUser;
 import com.initcat.user.model.req.LoginReq;
 import com.initcat.user.model.req.LogoutReq;
 import com.initcat.user.model.resp.LoginResp;
@@ -29,8 +30,9 @@ public class LoginController {
 
     @PostMapping(value = "/login", consumes = "application/json")
     public LoginResp login(@Valid @RequestBody LoginReq request) {
+        CommUser commUser = userService.login(request.getPhone(), request.getPassward());
         LoginResp resp = new LoginResp();
-        resp.setCommUser(userService.login(request.getUserNumber(), request.getPassward(), request.getUserType()));
+        resp.setCommUser(commUser);
         return resp;
     }
 
