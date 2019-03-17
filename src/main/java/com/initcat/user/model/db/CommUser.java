@@ -16,7 +16,7 @@ public class CommUser implements Serializable {
     private String password;
     private String name;
     private Integer six;
-    private int age;
+    private Integer age;
     private Integer activate_status;
     private Date create_time;
     private Date activate_time;
