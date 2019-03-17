@@ -21,7 +21,7 @@ import javax.validation.Valid;
  * @date 2018/11/26
  */
 @RestController
-@RequestMapping("/account")
+@RequestMapping("/user")
 public class LoginController {
 
     @Autowired

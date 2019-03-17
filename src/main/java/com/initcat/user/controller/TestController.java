@@ -22,7 +22,7 @@ public class TestController {
     }
 
     @PostMapping(value = "/test", consumes = "application/json")
-    public void test(@Valid @RequestBody LoginReq request, @RequestParam(value = "test", required = false) String test) {
+    public void test(@Valid @RequestBody LoginReq request, @RequestParam(value = "ServiceTest", required = false) String test) {
         // @RequestParam required 非空为false时不穿该参数也会进入该方法
         System.out.println(test);
     }
