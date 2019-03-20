@@ -20,4 +20,14 @@ public interface UserService {
      */
     CommUser login(String userPhone, String passWard);
 
+    /**
+     * 新建
+     * @author limingsong
+     */
+    int save(CommUser entity);
+    /**
+     * 新建
+     * @author limingsong
+     */
+    int update(CommUser entity);
 }

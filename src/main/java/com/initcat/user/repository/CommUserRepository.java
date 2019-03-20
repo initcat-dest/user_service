@@ -15,4 +15,8 @@ public interface CommUserRepository extends JpaRepository<CommUser, Long> {
 
     CommUser findByPhone(String userPhone);
 
+    /*新建用户*/
+    CommUser saveAndFlush(CommUser entity);
+    /*完善用户信息*/
+    CommUser update(CommUser entity);
 }

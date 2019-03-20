@@ -15,7 +15,7 @@ public class CommUser implements Serializable {
     private String phone;
     private String password;
     private String name;
-    private Integer six;
+    private Integer sex;
     private Integer age;
     private Integer activate_status;
     private Date create_time;
@@ -59,12 +59,12 @@ public class CommUser implements Serializable {
         this.name = name;
     }
 
-    public Integer getSix() {
-        return six;
+    public Integer getSex() {
+        return sex;
     }
 
     public void setSix(Integer six) {
-        this.six = six;
+        this.sex = sex;
     }
 
     public int getAge() {
